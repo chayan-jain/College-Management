@@ -1,0 +1,36 @@
+create table Student(
+         Reg_No varchar(10) primary key not null ,
+         Roll_No int(5)  not null ,
+         Name varchar(25) not null , 
+         Year varchar(10) not null ,
+         Branch varchar(40) not null ,
+         Section varchar(5) not null ,
+         Email varchar(30) not null,
+         Mobile_No int(10) not null ,
+         T1 int(3) not null , 
+         T2 int(3) not null , 
+         T3 int(3) not null , 
+         T4 int(3) not null , 
+         T5 int(3) not null ,
+         L1 int(3) not null , 
+         L2 int(3) not null , 
+         L3 int(3) not null , 
+         L4 int(3) not null , 
+         L5 int(3) not null ,
+         Grade char(4) not null, 
+         Agg double(6,2) not null 
+         );
+
+
+create table Faculty(
+          Reg_No   int(10) primary key not null,
+          Name     varchar(25) not null ,
+          UserName varchar(25) not null ,
+          Password varchar(10) not null ,
+          Department  varchar(40) not null ,
+          Post     varchar(40) not null ,
+          E_Mail   varchar(40) not null ,
+          Mobile   int(10) not null ,
+          Result   varchar(10),
+          Tutor    varchar(10) not null ,
+          Subject  varchar(40));
